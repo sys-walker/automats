@@ -1,0 +1,13 @@
+#D
+#E
+#G
+A,B/a-C/b
+B,D/a-E/b
+C,A/a-B/b
+D,C/a-F/b
+E,G/a-H/b
+F,H/a-B/b
+G,I/a-I/b
+H,J/a-F/b
+I,H/a-I/b
+J,G/a-E/b
