@@ -1,0 +1,115 @@
+﻿! SIMULADOR AFD
+
+!
+! SECCIO Simulador
+
+!    El simulador es pot iniciar de les següents formes:
+
+!    python3 simuladorAF.py
+!    ./simuladorAF.py
+
+!
+! SECCIO simulador
+
+!     Consideracions sobre la sintaxis dels fitxers:
+
+!       - Els comentaris han de començar amb "!"
+
+!       - Els estats finals s'indiquen amb #<estat_final>
+
+!       - L'estat inicial es considera que esta a la primera 
+
+!         linia de la taula de transició
+
+!       - La taula de transició s'ha de fer com diu la SECCIO Taula Transició
+
+!       - S'han de tindre en compte les consideracions de la SECCIO Automats
+!
+
+! SECCIO Taula Transició 
+
+!    La taula de transició es siguint l'esquema de taula (Figura 1)
+
+!   
+
+!          |  0  |  1  |  ...
+
+!      ----|-------------------
+
+!      | A |  B  |  A  |  ... 
+
+!      ----|-------------------
+
+!      | B |  B  |  C  |  ...
+
+!      ----|-------------------
+
+!      | C |  C  |  C  |  ...
+
+!      ----|-------------------
+
+!            [Figura 1]
+
+! 
+
+!   pero aplanant amb les lletres de l'alfabet
+
+!   exemple  A,B/0-A/1-.....
+
+!   <Estat>,<Estat desti1>/<lletra1>-<Estat destí2>/<lletra2>- ...
+
+!
+
+! SECCIO Automats
+
+!     Consideracions els automats:
+
+!       - Tots els caracters de l'automat ha d'anar a un estat sino pot provocar errors (Figura 2 i Figura 3)
+
+!       - El simulador diferencia majuscules, minuscules, espais,... i els estats tant com a la part
+
+!         de declaració d'estats finals com inicials han de tenir nom identic
+!
+!
+! 
+!      a--(0)-->b--(1)-->c+ NO
+! 
+
+!            [Figura 2]               
+
+!     
+
+!      a--(0)-->b--(1)-->c+ SI
+!
+
+!       \       |       /
+
+!        (1)   (0)   (0,1)
+
+!           \   |   /
+
+!             \ | /
+
+!              Pou
+
+!          [Figura 3] 
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+
